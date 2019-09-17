@@ -97,5 +97,14 @@
 			""
 		],
 		"description": "Log output to console"
+	},
+	"temp_logaction": {
+		"prefix": "temp_logaction",
+		"body": [
+			"logging.info('${1:action} started...')",
+			"${2:# Put your action here}",
+			"logging.info('${1:action} completed')"
+		],
+		"description": "Log output to console"
 	}
 }
