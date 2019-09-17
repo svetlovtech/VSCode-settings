@@ -1,0 +1,305 @@
+{
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "editor.mouseWheelZoom": true,
+    "explorer.confirmDelete": false,
+    "files.autoSave": "afterDelay",
+    "editor.largeFileOptimizations": false,
+    "files.exclude": {
+        "**/.classpath": true,
+        "**/.project": true,
+        "**/.settings": true,
+        "**/.factorypath": true
+    },
+    "editor.renderWhitespace": "all",
+    "python.autoComplete.addBrackets": true,
+    "typescript.format.placeOpenBraceOnNewLineForFunctions": true,
+    "javascript.format.placeOpenBraceOnNewLineForFunctions": true,
+    "javascript.format.placeOpenBraceOnNewLineForControlBlocks": true,
+    "markdown.preview.breaks": true,
+    "code-runner.executorMap": {
+        "python": "$pythonPath -u $fullFileName",
+    },
+    "postfix-py.customTemplates": [
+        {
+            "name": "sout",
+            "body": "print({{expr}})",
+            "description": "sout",
+            "when": [
+                "identifier",
+                "unary-expression",
+                "binary-expression",
+                "expression",
+                "function-call"
+            ]
+        },
+        {
+            "name": "type",
+            "body": "type({{expr}})",
+            "description": "type",
+            "when": [
+                "identifier",
+                "unary-expression",
+                "binary-expression",
+                "expression",
+                "function-call"
+            ]
+        },
+        {
+            "name": "str",
+            "body": "str({{expr}})",
+            "description": "str",
+            "when": [
+                "identifier",
+                "unary-expression",
+                "binary-expression",
+                "expression",
+                "function-call"
+            ]
+        },
+        {
+            "name": "bytes",
+            "body": "bytes({{expr}})",
+            "description": "str",
+            "when": [
+                "identifier",
+                "unary-expression",
+                "binary-expression",
+                "expression",
+                "function-call"
+            ]
+        },
+        {
+            "name": "soutv",
+            "body": "print(f'{{expr}} = {{{expr}}}')",
+            "description": "sout",
+            "when": [
+                "identifier",
+                "unary-expression",
+                "binary-expression",
+                "expression",
+                "function-call"
+            ]
+        },
+        {
+            "name": "compl",
+            "body": "${1:array_var} = [$3${2:x} for ${2:x} in {{expr}}]",
+            "description": "List comprehension",
+            "when": [
+                "identifier",
+                "expression",
+                "function-call"
+            ]
+        },
+        {
+            "name": "isinstanceif",
+            "body": "if isinstance({{expr}}, ${1:typename}):\n\t$2",
+            "description": "List comprehension",
+            "when": [
+                "identifier",
+                "expression",
+                "function-call"
+            ]
+        },
+        {
+            "name": "isinstance",
+            "body": "isinstance({{expr}}, ${1:typename})",
+            "description": "List comprehension",
+            "when": [
+                "identifier",
+                "expression",
+                "function-call"
+            ]
+        },
+        {
+            "name": "var",
+            "body": "${1:var_name} = {{expr}}\n${1:var_name}",
+            "description": "create variable",
+            "when": [
+                "identifier",
+                "unary-expression",
+                "binary-expression",
+                "expression",
+                "function-call"
+            ]
+        },
+        {
+            "name": "vart",
+            "body": "${1:var_name}: ${2:type} = {{expr}}\n${1:var_name}",
+            "description": "create variable",
+            "when": [
+                "identifier",
+                "unary-expression",
+                "binary-expression",
+                "expression",
+                "function-call"
+            ]
+        },
+        {
+            "name": "jdumps",
+            "body": "json.dumps({{expr}})",
+            "description": "jdumps",
+            "when": [
+                "identifier",
+                "unary-expression",
+                "binary-expression",
+                "expression",
+                "function-call"
+            ]
+        },
+        {
+            "name": "jloads",
+            "body": "json.loads({{expr}})",
+            "description": "jdumps",
+            "when": [
+                "identifier",
+                "unary-expression",
+                "binary-expression",
+                "expression",
+                "function-call"
+            ]
+        },
+        {
+            "name": "logd",
+            "body": "logging.debug({{expr}})",
+            "description": "logging.debug",
+            "when": [
+                "identifier",
+                "unary-expression",
+                "binary-expression",
+                "expression",
+                "function-call"
+            ]
+        },
+        {
+            "name": "logdv",
+            "body": "logging.debug(f'{{expr}} = {{{expr}}}')",
+            "description": "logdv",
+            "when": [
+                "identifier",
+                "unary-expression",
+                "binary-expression",
+                "expression",
+                "function-call"
+            ]
+        },
+        {
+            "name": "logi",
+            "body": "logging.info({{expr}})",
+            "description": "logging.info",
+            "when": [
+                "identifier",
+                "unary-expression",
+                "binary-expression",
+                "expression",
+                "function-call"
+            ]
+        },
+        {
+            "name": "logiv",
+            "body": "logging.info(f'{{expr}} = {{{expr}}}')",
+            "description": "logiv",
+            "when": [
+                "identifier",
+                "unary-expression",
+                "binary-expression",
+                "expression",
+                "function-call"
+            ]
+        },
+        {
+            "name": "for",
+            "body": "for ${1:x} in {{expr}}:\n\t${3:pass}",
+            "description": "for cycle",
+            "when": [
+                "identifier",
+                "expression",
+                "function-call"
+            ]
+        },
+        {
+            "name": "forr",
+            "body": "for ${1:x} in range({{expr}}):\n\t${3:pass}",
+            "description": "for cycle with range({{expr}})",
+            "when": [
+                "identifier",
+                "expression",
+                "function-call"
+            ]
+        },
+        {
+            "name": "forv",
+            "body": "for ${1:x}, ${2:y} in {{expr}}:\n\t${3:pass}",
+            "description": "for cycle",
+            "when": [
+                "identifier",
+                "expression",
+                "function-call"
+            ]
+        },
+        {
+            "name": "fore",
+            "body": "for ${1:x}, ${2:y} in enumerate({{expr}}):\n\t${3:pass}",
+            "description": "for cycle",
+            "when": [
+                "identifier",
+                "expression",
+                "function-call"
+            ]
+        }
+    ],
+    "liveServer.settings.donotShowInfoMsg": true,
+    "workbench.colorTheme": "Material Theme",
+    "workbench.iconTheme": "material-icon-theme",
+    "explorer.confirmDragAndDrop": false,
+    "python.linting.pep8Enabled": true,
+    "python.linting.pylintArgs": [
+        "--load-plugins",
+        "pylint_django"
+    ],
+    "python.linting.pylintEnabled": true,
+    "[html]": {
+        "editor.defaultFormatter": "HookyQR.beautify"
+    },
+    "python.jediEnabled": false,
+    "python.testing.unittestEnabled": true,
+    "python.testing.pytestEnabled": true,
+    "cSpell.enabledLanguageIds": [
+        "asciidoc",
+        "c",
+        "cpp",
+        "csharp",
+        "css",
+        "git-commit",
+        "go",
+        "handlebars",
+        "haskell",
+        "html",
+        "jade",
+        "java",
+        "javascript",
+        "javascriptreact",
+        "json",
+        "jsonc",
+        "latex",
+        "less",
+        "markdown",
+        "php",
+        "plaintext",
+        "pug",
+        "restructuredtext",
+        "rust",
+        "scala",
+        "scss",
+        "text",
+        "typescript",
+        "typescriptreact",
+        "yaml",
+        "yml"
+    ],
+    "python.analysis.memory.keepLibraryLocalVariables": true,
+    "python.analysis.memory.keepLibraryAst": true,
+    "python.disableInstallationCheck": true,
+    "python.linting.mypyEnabled": true,
+    "pythonTestExplorer.testFramework": "pytest"
+}
