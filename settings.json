@@ -252,7 +252,6 @@
     "workbench.colorTheme": "Material Theme",
     "workbench.iconTheme": "material-icon-theme",
     "explorer.confirmDragAndDrop": false,
-    "python.linting.pep8Enabled": true,
     "python.linting.pylintArgs": [
         "--load-plugins",
         "pylint_django"
@@ -261,7 +260,6 @@
     "[html]": {
         "editor.defaultFormatter": "HookyQR.beautify"
     },
-    "python.jediEnabled": false,
     "python.testing.unittestEnabled": true,
     "python.testing.pytestEnabled": true,
     "cSpell.enabledLanguageIds": [
@@ -301,5 +299,7 @@
     "python.analysis.memory.keepLibraryAst": true,
     "python.disableInstallationCheck": true,
     "python.linting.mypyEnabled": true,
-    "pythonTestExplorer.testFramework": "pytest"
+    "pythonTestExplorer.testFramework": "pytest",
+    "python.jediEnabled": false,
+    "python.linting.pep8Enabled": true
 }
