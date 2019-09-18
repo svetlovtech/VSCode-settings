@@ -44,6 +44,6 @@ def copy_files():
 if __name__ == "__main__":
     logging.info('Install settings for VSCode started...')
     install_plugins()
-    # copy_files()
+    copy_files()
     logging.info('Install settings for VSCode completed')
     logging.info('GoodLuck and HaveFun for using python with VSCode ;-)')
