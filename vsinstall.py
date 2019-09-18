@@ -12,10 +12,14 @@ logging.basicConfig(
 
 def install_plugins():
     logging.info('Install plugins for VSCode started...')
-    with open('plugin-list.txt', 'r') as plugin_file:
-        plugin_list = plugin_file.readlines()
-        logging.debug(f'plugin_list = {plugin_list}')
+    with open('plugin-list.txt', mode='r', encoding='UTF-8') as plugin_file:
+        plugin_list = [x.replace("\n", "") for x in plugin_file.readlines()]
+        installed_plugin_list = os.popen(
+            'code --list-extensions').read().split('\n')
         for plugin_number, plugin_name in enumerate(plugin_list):
+            if plugin_name in installed_plugin_list:
+                logging.info(f'{plugin_name} is already installed')
+                continue
             logging.info(
                 f'Installing {plugin_number + 1} of {len(plugin_list)} plugins...')
             logging.debug(f'plugin_name = {plugin_name}')
@@ -40,6 +44,6 @@ def copy_files():
 if __name__ == "__main__":
     logging.info('Install settings for VSCode started...')
     install_plugins()
-    copy_files()
+    # copy_files()
     logging.info('Install settings for VSCode completed')
     logging.info('GoodLuck and HaveFun for using python with VSCode ;-)')
