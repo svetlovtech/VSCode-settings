@@ -20,6 +20,44 @@
     "code-runner.executorMap": {
         "python": "$pythonPath -u $fullFileName",
     },
+    "postfix.customTemplates": [
+        {
+            "name": "sout",
+            "body": "console.log({{expr}})",
+            "description": "sout",
+            "when": [
+                "identifier",
+                "unary-expression",
+                "binary-expression",
+                "expression",
+                "function-call"
+            ]
+        },
+        {
+            "name": "soutv",
+            "body": "console.log(`{{expr}} = \\${{{expr}}}`)",
+            "description": "sout",
+            "when": [
+                "identifier",
+                "unary-expression",
+                "binary-expression",
+                "expression",
+                "function-call"
+            ]
+        },
+        {
+            "name": "soutvjson",
+            "body": "console.log(`{{expr}} = \\${JSON.stringify({{expr}})}`)",
+            "description": "sout",
+            "when": [
+                "identifier",
+                "unary-expression",
+                "binary-expression",
+                "expression",
+                "function-call"
+            ]
+        },
+    ],
     "postfix-py.customTemplates": [
         {
             "name": "sout",
