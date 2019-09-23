@@ -38,6 +38,8 @@ def copy_files():
         f'COPY settings.json {appdata_folder}\\Code\\User\\settings.json')
     os.system(
         f'COPY python.json {appdata_folder}\\Code\\User\\snippets\\python.json')
+    os.system(
+        f'COPY typescript.json {appdata_folder}\\Code\\User\\snippets\\typescript.json')
     logging.info('Copy files complited')
 
 
