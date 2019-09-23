@@ -6,4 +6,6 @@
 
 > git clone https://github.com/32-52/VSCode-settings.git
 >
-> python .\VSCode-settings\vsinstall.py
+> cd VSCode-settings
+>
+> python vsinstall.py
