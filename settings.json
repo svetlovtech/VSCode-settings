@@ -24,7 +24,7 @@
         {
             "name": "sout",
             "body": "console.log({{expr}})",
-            "description": "sout",
+            "description": "sout (TypeScript)",
             "when": [
                 "identifier",
                 "unary-expression",
@@ -36,7 +36,7 @@
         {
             "name": "soutv",
             "body": "console.log(`{{expr}} = \\${{{expr}}}`)",
-            "description": "sout",
+            "description": "soutv (TypeScript)",
             "when": [
                 "identifier",
                 "unary-expression",
@@ -48,7 +48,7 @@
         {
             "name": "soutvjson",
             "body": "console.log(`{{expr}} = \\${JSON.stringify({{expr}})}`)",
-            "description": "sout",
+            "description": "soutvjson (TypeScript)",
             "when": [
                 "identifier",
                 "unary-expression",
@@ -62,7 +62,7 @@
         {
             "name": "sout",
             "body": "print({{expr}})",
-            "description": "sout",
+            "description": "sout (Python)",
             "when": [
                 "identifier",
                 "unary-expression",
@@ -74,7 +74,7 @@
         {
             "name": "type",
             "body": "type({{expr}})",
-            "description": "type",
+            "description": "type (Python)",
             "when": [
                 "identifier",
                 "unary-expression",
@@ -86,7 +86,7 @@
         {
             "name": "str",
             "body": "str({{expr}})",
-            "description": "str",
+            "description": "str (Python)",
             "when": [
                 "identifier",
                 "unary-expression",
@@ -98,7 +98,7 @@
         {
             "name": "bytes",
             "body": "bytes({{expr}})",
-            "description": "str",
+            "description": "str (Python)",
             "when": [
                 "identifier",
                 "unary-expression",
@@ -110,7 +110,7 @@
         {
             "name": "soutv",
             "body": "print(f'{{expr}} = {{{expr}}}')",
-            "description": "sout",
+            "description": "soutv (Python)",
             "when": [
                 "identifier",
                 "unary-expression",
@@ -122,7 +122,7 @@
         {
             "name": "compl",
             "body": "${1:array_var} = [$3${2:x} for ${2:x} in {{expr}}]",
-            "description": "List comprehension",
+            "description": "List comprehension (Python)",
             "when": [
                 "identifier",
                 "expression",
@@ -132,7 +132,7 @@
         {
             "name": "isinstanceif",
             "body": "if isinstance({{expr}}, ${1:typename}):\n\t$2",
-            "description": "List comprehension",
+            "description": "List comprehension (Python)",
             "when": [
                 "identifier",
                 "expression",
@@ -142,7 +142,7 @@
         {
             "name": "isinstance",
             "body": "isinstance({{expr}}, ${1:typename})",
-            "description": "List comprehension",
+            "description": "List comprehension (Python)",
             "when": [
                 "identifier",
                 "expression",
@@ -152,7 +152,7 @@
         {
             "name": "var",
             "body": "${1:var_name} = {{expr}}\n${1:var_name}",
-            "description": "create variable",
+            "description": "create variable (Python)",
             "when": [
                 "identifier",
                 "unary-expression",
@@ -164,7 +164,7 @@
         {
             "name": "vart",
             "body": "${1:var_name}: ${2:type} = {{expr}}\n${1:var_name}",
-            "description": "create variable",
+            "description": "create variable with type hint (Python)",
             "when": [
                 "identifier",
                 "unary-expression",
@@ -176,7 +176,7 @@
         {
             "name": "jdumps",
             "body": "json.dumps({{expr}})",
-            "description": "jdumps",
+            "description": "jdumps (Python)",
             "when": [
                 "identifier",
                 "unary-expression",
@@ -188,7 +188,7 @@
         {
             "name": "jloads",
             "body": "json.loads({{expr}})",
-            "description": "jdumps",
+            "description": "jdumps (Python)",
             "when": [
                 "identifier",
                 "unary-expression",
@@ -200,7 +200,7 @@
         {
             "name": "logd",
             "body": "logging.debug({{expr}})",
-            "description": "logging.debug",
+            "description": "print variable in logging.debug (Python)",
             "when": [
                 "identifier",
                 "unary-expression",
@@ -212,7 +212,7 @@
         {
             "name": "logdv",
             "body": "logging.debug(f'{{expr}} = {{{expr}}}')",
-            "description": "logdv",
+            "description": "print variable in logging.debug with format (Python)",
             "when": [
                 "identifier",
                 "unary-expression",
@@ -224,7 +224,7 @@
         {
             "name": "logi",
             "body": "logging.info({{expr}})",
-            "description": "logging.info",
+            "description": "print variable in logging.info (Python)",
             "when": [
                 "identifier",
                 "unary-expression",
@@ -236,7 +236,7 @@
         {
             "name": "logiv",
             "body": "logging.info(f'{{expr}} = {{{expr}}}')",
-            "description": "logiv",
+            "description": "print variable in logging.info with format (Python)",
             "when": [
                 "identifier",
                 "unary-expression",
@@ -248,7 +248,7 @@
         {
             "name": "for",
             "body": "for ${1:x} in {{expr}}:\n\t${3:pass}",
-            "description": "for cycle",
+            "description": "for cycle (Python)",
             "when": [
                 "identifier",
                 "expression",
@@ -258,7 +258,7 @@
         {
             "name": "forr",
             "body": "for ${1:x} in range({{expr}}):\n\t${3:pass}",
-            "description": "for cycle with range({{expr}})",
+            "description": "for cycle with range({{expr}}) (Python)",
             "when": [
                 "identifier",
                 "expression",
@@ -268,7 +268,7 @@
         {
             "name": "forv",
             "body": "for ${1:x}, ${2:y} in {{expr}}:\n\t${3:pass}",
-            "description": "for cycle",
+            "description": "for cycle (Python)",
             "when": [
                 "identifier",
                 "expression",
@@ -278,7 +278,7 @@
         {
             "name": "fore",
             "body": "for ${1:x}, ${2:y} in enumerate({{expr}}):\n\t${3:pass}",
-            "description": "for cycle",
+            "description": "for cycle (Python)",
             "when": [
                 "identifier",
                 "expression",
@@ -339,5 +339,8 @@
     "python.linting.mypyEnabled": true,
     "pythonTestExplorer.testFramework": "pytest",
     "python.jediEnabled": false,
-    "python.linting.pep8Enabled": true
+    "python.linting.pep8Enabled": true,
+    "javascript.suggest.completeFunctionCalls": true,
+    "typescript.format.placeOpenBraceOnNewLineForControlBlocks": true,
+    "typescript.suggest.completeFunctionCalls": true
 }
