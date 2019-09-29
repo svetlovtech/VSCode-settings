@@ -2,6 +2,7 @@ aaron-bond.better-comments
 abusaidm.html-snippets
 batisteo.vscode-django
 bigonesystems.django
+christian-kohler.npm-intellisense
 christian-kohler.path-intellisense
 CoenraadS.bracket-pair-colorizer
 cqh.postfix-template-py
@@ -9,8 +10,11 @@ cstrap.flask-snippets
 davidmarek.jsonpath-extract
 daylerees.rainglow
 dbaeumer.jshint
+donjayamanne.githistory
 donjayamanne.python-extension-pack
 DotJoshJohnson.xml
+eamodio.gitlens
+eg2.vscode-npm-script
 Equinusocio.vsc-material-theme
 eriklynd.json-tools
 filwaline.vscode-postfix-python
