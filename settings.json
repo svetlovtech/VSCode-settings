@@ -60,18 +60,6 @@
     ],
     "postfix-py.customTemplates": [
         {
-            "name": "sout",
-            "body": "print({{expr}})",
-            "description": "sout (Python)",
-            "when": [
-                "identifier",
-                "unary-expression",
-                "binary-expression",
-                "expression",
-                "function-call"
-            ]
-        },
-        {
             "name": "type",
             "body": "type({{expr}})",
             "description": "type (Python)",
@@ -108,9 +96,33 @@
             ]
         },
         {
+            "name": "sout",
+            "body": "print({{expr}})",
+            "description": "sout (Python)",
+            "when": [
+                "identifier",
+                "unary-expression",
+                "binary-expression",
+                "expression",
+                "function-call"
+            ]
+        },
+        {
             "name": "soutv",
             "body": "print(f'{{expr}} = {{{expr}}}')",
             "description": "soutv (Python)",
+            "when": [
+                "identifier",
+                "unary-expression",
+                "binary-expression",
+                "expression",
+                "function-call"
+            ]
+        },
+        {
+            "name": "soutvt",
+            "body": "print(f'{{expr}}{type({{expr}})} = {{{expr}}}')",
+            "description": "soutvt (Python)",
             "when": [
                 "identifier",
                 "unary-expression",
@@ -222,6 +234,18 @@
             ]
         },
         {
+            "name": "logdvt",
+            "body": "logging.debug(f'{{expr}}{type({{expr}})} = {{{expr}}}')",
+            "description": "print variable in logging.debug with format and type (Python)",
+            "when": [
+                "identifier",
+                "unary-expression",
+                "binary-expression",
+                "expression",
+                "function-call"
+            ]
+        },
+        {
             "name": "logi",
             "body": "logging.info({{expr}})",
             "description": "print variable in logging.info (Python)",
@@ -237,6 +261,18 @@
             "name": "logiv",
             "body": "logging.info(f'{{expr}} = {{{expr}}}')",
             "description": "print variable in logging.info with format (Python)",
+            "when": [
+                "identifier",
+                "unary-expression",
+                "binary-expression",
+                "expression",
+                "function-call"
+            ]
+        },
+        {
+            "name": "logivt",
+            "body": "logging.info(f'{{expr}}{type({{expr}})} = {{{expr}}}')",
+            "description": "print variable in logging.info with format and type(Python)",
             "when": [
                 "identifier",
                 "unary-expression",
@@ -287,7 +323,6 @@
         }
     ],
     "liveServer.settings.donotShowInfoMsg": true,
-    "workbench.colorTheme": "Material Theme",
     "workbench.iconTheme": "material-icon-theme",
     "explorer.confirmDragAndDrop": false,
     "python.linting.pylintArgs": [
@@ -342,5 +377,11 @@
     "python.linting.pep8Enabled": true,
     "javascript.suggest.completeFunctionCalls": true,
     "typescript.format.placeOpenBraceOnNewLineForControlBlocks": true,
-    "typescript.suggest.completeFunctionCalls": true
+    "typescript.suggest.completeFunctionCalls": true,
+    "gitlens.gitCommands.closeOnFocusOut": true,
+    "workbench.colorTheme": "Atom One Light",
+    "cSpell.userWords": [
+        "UUIDs",
+        "uuid"
+    ]
 }
