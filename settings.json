@@ -374,7 +374,7 @@
     "python.linting.mypyEnabled": true,
     "pythonTestExplorer.testFramework": "pytest",
     "python.jediEnabled": false,
-    "python.linting.pep8Enabled": true,
+    "python.linting.pycodestyleEnabled": true,
     "javascript.suggest.completeFunctionCalls": true,
     "typescript.format.placeOpenBraceOnNewLineForControlBlocks": true,
     "typescript.suggest.completeFunctionCalls": true,
