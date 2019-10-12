@@ -9,3 +9,4 @@
 > cd VSCode-settings
 >
 > python vsinstall.py
+> 
