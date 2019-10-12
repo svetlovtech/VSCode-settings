@@ -121,7 +121,7 @@
         },
         {
             "name": "soutvt",
-            "body": "print(f'{{expr}}{type({{expr}})} = {{{expr}}}')",
+            "body": "print(f'{{expr}} {type({{expr}})} = {{{expr}}}')",
             "description": "soutvt (Python)",
             "when": [
                 "identifier",
@@ -235,7 +235,7 @@
         },
         {
             "name": "logdvt",
-            "body": "logging.debug(f'{{expr}}{type({{expr}})} = {{{expr}}}')",
+            "body": "logging.debug(f'{{expr}} {type({{expr}})} = {{{expr}}}')",
             "description": "print variable in logging.debug with format and type (Python)",
             "when": [
                 "identifier",
@@ -271,7 +271,7 @@
         },
         {
             "name": "logivt",
-            "body": "logging.info(f'{{expr}}{type({{expr}})} = {{{expr}}}')",
+            "body": "logging.info(f'{{expr}} {type({{expr}})} = {{{expr}}}')",
             "description": "print variable in logging.info with format and type(Python)",
             "when": [
                 "identifier",
