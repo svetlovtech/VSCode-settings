@@ -34,4 +34,3 @@ if __name__ == "__main__":
     export_settings()
     export_plugin_list()
     logging.info('Export settings for VSCode completed')
-    logging.info('GoodLuck and HaveFun for using python with VSCode ;-)')
