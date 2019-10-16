@@ -12,6 +12,8 @@
 > python vsinstall.py
 
 ## Plugin list
+https://marketplace.visualstudio.com/items?itemName=mathiasfrohlich.Kotlin
+
 https://marketplace.visualstudio.com/items?itemName=aaron-bond.better-comments
 
 https://marketplace.visualstudio.com/items?itemName=abusaidm.html-snippets
