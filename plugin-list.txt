@@ -31,6 +31,7 @@ KevinRose.vsc-python-indent
 ldez.ignore-files
 littlefoxteam.vscode-python-test-adapter
 magicstack.MagicPython
+mathiasfrohlich.Kotlin
 mechatroner.rainbow-csv
 mgesbert.python-path
 ms-azuretools.vscode-docker
