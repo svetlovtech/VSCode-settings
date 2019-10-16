@@ -383,5 +383,6 @@
     "cSpell.userWords": [
         "UUIDs",
         "uuid"
-    ]
+    ],
+    "C_Cpp.updateChannel": "Insiders"
 }
