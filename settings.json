@@ -333,6 +333,10 @@
     "[html]": {
         "editor.defaultFormatter": "HookyQR.beautify"
     },
+    "python.linting.pycodestyleEnabled": true,
+    "python.linting.pycodestyleArgs": [
+        "--ignore=E501"
+    ],
     "python.testing.unittestEnabled": true,
     "python.testing.pytestEnabled": true,
     "cSpell.enabledLanguageIds": [
@@ -374,7 +378,6 @@
     "python.linting.mypyEnabled": true,
     "pythonTestExplorer.testFramework": "pytest",
     "python.jediEnabled": false,
-    "python.linting.pycodestyleEnabled": true,
     "javascript.suggest.completeFunctionCalls": true,
     "typescript.format.placeOpenBraceOnNewLineForControlBlocks": true,
     "typescript.suggest.completeFunctionCalls": true,
@@ -384,5 +387,7 @@
         "UUIDs",
         "uuid"
     ],
-    "C_Cpp.updateChannel": "Insiders"
+    "C_Cpp.updateChannel": "Insiders",
+    "terminal.external.windowsExec": "D:\\software\\Git\\git-bash.exe",
+    "editor.cursorSmoothCaretAnimation": true
 }
