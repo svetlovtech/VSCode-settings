@@ -23,8 +23,7 @@ def install_plugins():
             logging.info(
                 f'Installing {plugin_number + 1} of {len(plugin_list)} plugins...')
             logging.debug(f'plugin_name = {plugin_name}')
-            code_line = f'code --install-extension ' + \
-                plugin_name.replace("\\n", "")
+            code_line = 'code --install-extension ' + plugin_name.replace("\\n", "")
             logging.debug(f'code_line = {code_line}')
             os.system(code_line)
     logging.info('Install plugins for VSCode completed')
