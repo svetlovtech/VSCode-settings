@@ -61,3 +61,7 @@ vscjava.vscode-java-pack
 vscjava.vscode-java-test
 vscjava.vscode-maven
 wholroyd.jinja
+humao.rest-client
+mgmcdermott.vscode-language-babel
+dbaeumer.vscode-eslint
+esbenp.prettier-vscode
