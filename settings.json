@@ -426,5 +426,6 @@
     "C_Cpp.updateChannel": "Insiders",
     "terminal.external.windowsExec": "D:\\software\\Git\\git-bash.exe",
     "editor.cursorSmoothCaretAnimation": true,
-    "git.autofetch": true
+    "git.autofetch": true,
+    "editor.smoothScrolling": true
 }
