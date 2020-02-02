@@ -106,5 +106,17 @@
 			"logging.info('${1:action} completed')"
 		],
 		"description": "Action log wrapper"
+	},
+	"temp_logwrapper": {
+		"prefix": "temp_logwrapper",
+		"body": [
+			"def log_wrapper(func):",
+			"    def log_wrapper():",
+			"        logging.info(f'STARTING {func.__name__} ...')",
+			"        func()",
+			"        logging.info(f'ENDED {func.__name__}')",
+			"    return log_wrapper"
+		],
+		"description": "Log wrapper"
 	}
 }
