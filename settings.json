@@ -428,5 +428,8 @@
     "editor.smoothScrolling": true,
     "gitlens.views.repositories.files.layout": "tree",
     "python.terminal.activateEnvInCurrentTerminal": true,
-    "python.linting.pylamaEnabled": true
+    "python.linting.pylamaEnabled": true,
+    "python.linting.pylamaArgs": [
+        "--ignore=E501"
+    ]
 }
