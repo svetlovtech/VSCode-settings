@@ -1,5 +1,6 @@
 aaron-bond.better-comments
 abusaidm.html-snippets
+akamud.vscode-theme-onedark
 akamud.vscode-theme-onelight
 batisteo.vscode-django
 bigonesystems.django
@@ -9,7 +10,6 @@ CoenraadS.bracket-pair-colorizer
 cqh.postfix-template-py
 cstrap.flask-snippets
 davidmarek.jsonpath-extract
-dbaeumer.jshint
 donjayamanne.githistory
 donjayamanne.python-extension-pack
 DotJoshJohnson.xml
@@ -23,7 +23,6 @@ formulahendry.code-runner
 GrapeCity.gc-excelviewer
 hbenl.vscode-test-explorer
 HookyQR.beautify
-humao.rest-client
 IBM.output-colorizer
 ipatalas.vscode-postfix-ts
 janisdd.vscode-edit-csv
@@ -36,8 +35,6 @@ magicstack.MagicPython
 mathiasfrohlich.Kotlin
 mechatroner.rainbow-csv
 mgesbert.python-path
-mgmcdermott.vscode-language-babel
-ms-azuretools.vscode-docker
 ms-python.python
 ms-vscode.cpptools
 ms-vscode.powershell
