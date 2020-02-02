@@ -365,11 +365,10 @@
         "--load-plugins",
         "pylint_django"
     ],
-    "python.linting.pylintEnabled": true,
+    "python.linting.pylintEnabled": false,
     "[html]": {
         "editor.defaultFormatter": "HookyQR.beautify"
     },
-    "python.linting.pycodestyleEnabled": true,
     "python.linting.pycodestyleArgs": [
         "--ignore=E501"
     ],
@@ -411,14 +410,13 @@
     "python.analysis.memory.keepLibraryLocalVariables": true,
     "python.analysis.memory.keepLibraryAst": true,
     "python.disableInstallationCheck": true,
-    "python.linting.mypyEnabled": true,
     "pythonTestExplorer.testFramework": "pytest",
     "python.jediEnabled": false,
     "javascript.suggest.completeFunctionCalls": true,
     "typescript.format.placeOpenBraceOnNewLineForControlBlocks": true,
     "typescript.suggest.completeFunctionCalls": true,
     "gitlens.gitCommands.closeOnFocusOut": true,
-    "workbench.colorTheme": "Atom One Light",
+    "workbench.colorTheme": "Atom One Dark",
     "cSpell.userWords": [
         "UUIDs",
         "uuid"
@@ -427,5 +425,8 @@
     "terminal.external.windowsExec": "D:\\software\\Git\\git-bash.exe",
     "editor.cursorSmoothCaretAnimation": true,
     "git.autofetch": true,
-    "editor.smoothScrolling": true
+    "editor.smoothScrolling": true,
+    "gitlens.views.repositories.files.layout": "tree",
+    "python.terminal.activateEnvInCurrentTerminal": true,
+    "python.linting.pylamaEnabled": true
 }
