@@ -2,17 +2,19 @@ aaron-bond.better-comments
 abusaidm.html-snippets
 akamud.vscode-theme-onedark
 akamud.vscode-theme-onelight
+alefragnani.Bookmarks
 batisteo.vscode-django
 bigonesystems.django
 christian-kohler.npm-intellisense
 christian-kohler.path-intellisense
-CoenraadS.bracket-pair-colorizer
+CoenraadS.bracket-pair-colorizer-2
 cqh.postfix-template-py
 cstrap.flask-snippets
 davidmarek.jsonpath-extract
 donjayamanne.githistory
 donjayamanne.python-extension-pack
 DotJoshJohnson.xml
+DSKWRK.vscode-generate-getter-setter
 eamodio.gitlens
 eg2.vscode-npm-script
 eriklynd.json-tools
@@ -38,11 +40,12 @@ mgesbert.python-path
 ms-python.python
 ms-vscode.cpptools
 ms-vscode.powershell
-ms-vscode.vscode-typescript-tslint-plugin
 ms-vsliveshare.vsliveshare
 msjsdiag.debugger-for-chrome
+naumovs.color-highlight
 njpwerner.autodocstring
 PKief.material-icon-theme
+pmneo.tsimporter
 quicktype.quicktype
 redhat.java
 redhat.vscode-yaml
@@ -53,6 +56,7 @@ shd101wyy.markdown-preview-enhanced
 slevesque.vscode-hexdump
 slevesque.vscode-multiclip
 streetsidesoftware.code-spell-checker
+techer.open-in-browser
 thebarkman.vscode-djaneiro
 VisualStudioExptTeam.vscodeintellicode
 vscjava.vscode-java-debug
@@ -61,3 +65,4 @@ vscjava.vscode-java-pack
 vscjava.vscode-java-test
 vscjava.vscode-maven
 wholroyd.jinja
+Zignd.html-css-class-completion

@@ -431,5 +431,8 @@
     "python.linting.pylamaEnabled": true,
     "python.linting.pylamaArgs": [
         "--ignore=E501"
-    ]
+    ],
+    "terminal.integrated.shell.windows": "C:\\windows\\System32\\cmd.exe",
+    "python.dataScience.askForKernelRestart": false,
+    "git.enableSmartCommit": true
 }
