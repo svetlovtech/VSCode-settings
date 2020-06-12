@@ -11,6 +11,7 @@ CoenraadS.bracket-pair-colorizer-2
 cqh.postfix-template-py
 cstrap.flask-snippets
 davidmarek.jsonpath-extract
+dbaeumer.vscode-eslint
 donjayamanne.githistory
 donjayamanne.python-extension-pack
 DotJoshJohnson.xml
@@ -19,14 +20,12 @@ eamodio.gitlens
 eg2.vscode-npm-script
 eriklynd.json-tools
 esbenp.prettier-vscode
-filwaline.vscode-postfix-python
 formulahendry.auto-close-tag
 formulahendry.code-runner
 GrapeCity.gc-excelviewer
 hbenl.vscode-test-explorer
 HookyQR.beautify
 IBM.output-colorizer
-ipatalas.vscode-postfix-ts
 janisdd.vscode-edit-csv
 jeff-hykin.code-eol
 k--kato.intellij-idea-keybindings
@@ -44,10 +43,12 @@ ms-vsliveshare.vsliveshare
 msjsdiag.debugger-for-chrome
 naumovs.color-highlight
 njpwerner.autodocstring
+oderwat.indent-rainbow
 PKief.material-icon-theme
 pmneo.tsimporter
 quicktype.quicktype
 redhat.java
+redhat.vscode-xml
 redhat.vscode-yaml
 richie5um2.vscode-statusbar-json-path
 ritwickdey.LiveServer
