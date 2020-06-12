@@ -12,7 +12,7 @@
 	// 	],
 	// 	"description": "Log output to console"
 	// 
-	"Print log info to console": {
+	"Print log info": {
 		"prefix": "logi",
 		"body": [
 			"logging.info(${1:var})",
@@ -20,23 +20,7 @@
 		],
 		"description": "Print variable in logging.info"
 	},
-	"Print log to console": {
-		"prefix": "logiv",
-		"body": [
-			"logging.info(f'${1:var} = ${1:var}')",
-			"$2"
-		],
-		"description": "Print variable in logging.info with format"
-	},
-	"Print log to console": {
-		"prefix": "logdv",
-		"body": [
-			"logging.debug(f'${1:var} = ${1:var}')",
-			"$2"
-		],
-		"description": "Print variable in logging.debug with format"
-	},
-	"Print log to console": {
+	"Print log debug": {
 		"prefix": "logd",
 		"body": [
 			"logging.debug(${1:var})",
@@ -44,10 +28,58 @@
 		],
 		"description": "Print variable in logging.debug"
 	},
+	"Print log to info with name": {
+		"prefix": "logiv",
+		"body": [
+			"logging.info(f'${1:var} = {${1:var}}')",
+			"$2"
+		],
+		"description": "Print variable in logging.info with format"
+	},
+	"Print log debug to with name": {
+		"prefix": "logdv",
+		"body": [
+			"logging.debug(f'${1:var} = {${1:var}}')",
+			"$2"
+		],
+		"description": "Print variable in logging.debug with format"
+	},
+	"Print log to info with name and type": {
+		"prefix": "logivt",
+		"body": [
+			"logging.info(f'${1:var} <type:{type(${1:var})}> = {${1:var}}')",
+			"$2"
+		],
+		"description": "Print variable in logging.info with format"
+	},
+	"Print log debug to with name and type": {
+		"prefix": "logdvt",
+		"body": [
+			"logging.debug(f'${1:var} <type:{type(${1:var})}> = {${1:var}}')",
+			"$2"
+		],
+		"description": "Print variable in logging.debug with format"
+	},
 	"Print to console": {
 		"prefix": "sout",
 		"body": [
 			"print($1)",
+			"$2"
+		],
+		"description": "Print variable to console"
+	},
+	"Print to console with name": {
+		"prefix": "soutv",
+		"body": [
+			"print(f'${1:var} = {${1:var}}')",
+			"$2"
+		],
+		"description": "Print variable to console"
+	},
+	"Print to console with name and type": {
+		"prefix": "soutvt",
+		"body": [
+			"print(f'${1:var} <type:{type(${1:var})}> = {${1:var}}')",
 			"$2"
 		],
 		"description": "Print variable to console"
