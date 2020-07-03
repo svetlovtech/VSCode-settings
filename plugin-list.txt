@@ -37,6 +37,7 @@ mathiasfrohlich.Kotlin
 mechatroner.rainbow-csv
 mgesbert.python-path
 ms-python.python
+ms-python.vscode-pylance
 ms-vscode.cpptools
 ms-vscode.powershell
 ms-vsliveshare.vsliveshare
