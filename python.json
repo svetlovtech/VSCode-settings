@@ -142,13 +142,26 @@
 	"temp_logwrapper": {
 		"prefix": "temp_logwrapper",
 		"body": [
-			"def log_wrapper(func):",
-			"    def log_wrapper():",
-			"        logging.info(f'STARTING {func.__name__} ...')",
-			"        func()",
-			"        logging.info(f'ENDED {func.__name__}')",
-			"    return log_wrapper"
+			"from time import time",
+			"",
+			"def log_wrapper(wrapped_func):",
+			"    def wrapper(*args):",
+			"        logging.info(f'STARTING {wrapped_func.__name__} ...')",
+			"        start_func_time = round(time() * 1000)",
+			"        wrapped_func(*args)",
+			"        end_func_time = round(time() * 1000)",
+			"        work_time_milli = end_func_time - start_func_time",
+			"        logging.info(f'ENDED {wrapped_func.__name__}')",
+			"    return wrapper"
 		],
 		"description": "Log wrapper"
+	},
+	"main": {
+		"prefix": "main",
+		"body": [
+			"if __name__ == \"__main__\":",
+			"    "
+		],
+		"description": "if main"
 	}
 }

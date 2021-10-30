@@ -78,10 +78,13 @@
     "typescript.format.placeOpenBraceOnNewLineForControlBlocks": true,
     "typescript.suggest.completeFunctionCalls": true,
     "gitlens.gitCommands.closeOnFocusOut": true,
-    "workbench.colorTheme": "Atom One Dark",
     "cSpell.userWords": [
+        "Moodle",
         "UUIDs",
-        "uuid"
+        "uuid",
+        "нагрузочное",
+        "подход",
+        "тестирование"
     ],
     "C_Cpp.updateChannel": "Insiders",
     "terminal.external.windowsExec": "D:\\software\\Git\\git-bash.exe",
@@ -95,10 +98,55 @@
         "--ignore=E501"
     ],
     "terminal.integrated.shell.windows": "C:\\windows\\System32\\cmd.exe",
-    "python.dataScience.askForKernelRestart": false,
     "git.enableSmartCommit": true,
     "python.languageServer": "Pylance",
     "[json]": {
         "editor.defaultFormatter": "HookyQR.beautify"
-    }
+    },
+    "java.semanticHighlighting.enabled": true,
+    "java.jdt.ls.vmargs": "-XX:+UseParallelGC -XX:GCTimeRatio=4 -XX:AdaptiveSizePolicyWeight=90 -Dsun.zip.disableMemoryMapping=true -Xmx1G -Xms100m -javaagent:\"c:\\Users\\hp\\.vscode\\extensions\\gabrielbb.vscode-lombok-1.0.1\\server\\lombok.jar\"",
+    "[xml]": {
+        "editor.defaultFormatter": "redhat.vscode-xml"
+    },
+    "python.analysis.completeFunctionParens": true,
+    "[javascript]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "[yaml]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "git.confirmSync": false,
+    "jupyter.askForKernelRestart": false,
+    "workbench.editorAssociations": {
+        "*.ipynb": "jupyter-notebook"
+    },
+    "java.codeGeneration.generateComments": true,
+    "java.codeGeneration.toString.codeStyle": "STRING_BUILDER",
+    "java.configuration.runtimes": [],
+    "java.home": "D:\\software\\zulu-15",
+    "sqltools.useNodeRuntime": true,
+    "maven.executable.path": "D:\\software\\apache-maven-3.6.3\\bin\\mvn.cmd",
+    "java.project.importOnFirstTimeStartup": "automatic",
+    "python.pythonPath": "D:\\software\\Python385\\python.exe",
+    "[css]": {
+        "editor.defaultFormatter": "HookyQR.beautify"
+    },
+    "python.venvPath": "~/.env",
+    "output.smartScroll.enabled": false,
+    "redhat.telemetry.enabled": false,
+    "editor.autoClosingBrackets": "always",
+    "python.defaultInterpreterPath": "D:\\software\\Python385\\python.exe",
+    "notebook.cellToolbarLocation": {
+        "default": "right",
+        "jupyter-notebook": "left"
+    },
+    "git.ignoreRebaseWarning": true,
+    "[jsonc]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "workbench.colorTheme": "Atom One Dark",
+    "editor.fontLigatures": null,
+    "editor.fontFamily": "HACK",
+    "editor.codeLensFontFamily": "Hack",
+    "editor.renderControlCharacters": true
 }
